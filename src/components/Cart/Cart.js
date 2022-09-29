@@ -10,7 +10,6 @@ const handleToAddBreak = () => {
 }
 
 
-
 const Cart = ({ cart }) => {
     // const { cart } = props;
 
@@ -43,7 +42,13 @@ const Cart = ({ cart }) => {
                 <p>Exercise time:{time}s </p>
                 <p>Break time:{handleToAddBreak}</p>
             </div>
+            <button className='btn-cart' >
+                <p>
+                    Activity Completed
+                </p>
+            </button>
         </div>
+
     );
 };
 
