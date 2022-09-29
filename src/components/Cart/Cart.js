@@ -2,12 +2,8 @@ import React from 'react';
 
 import './Cart.css';
 
-// const [break, setBreak] = useState();
-const handleToAddBreak = () => {
-    console.log('clicked');
-    // const newBreak = break;
-    // setBreak(newBreak)
-}
+
+
 
 const handle = () => {
     alert("You are a welcome.")
@@ -31,7 +27,7 @@ const Cart = ({ cart }) => {
 
             <div>
                 <h3>Add a Break Time</h3>
-                <div onClick={handleToAddBreak}>
+                <div>
                     <button >10s</button>
                     <button> 20s</button>
                     <button> 30s</button>
@@ -41,9 +37,8 @@ const Cart = ({ cart }) => {
 
             <div>
                 <h2>Exercise Details</h2>
-                <p>setCart Item: {cart.length}</p>
                 <p>Exercise time:{time}s </p>
-                <p>Break time:{handleToAddBreak}</p>
+                <p>Break time:</p>
             </div>
             <button onClick={handle} className='btn-cart' >
                 <p>
